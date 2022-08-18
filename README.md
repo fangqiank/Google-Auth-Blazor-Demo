@@ -1,7 +1,7 @@
-# Google-Auth-Blazor-Demo
+### Install-Package Microsoft.AspNetCore.Authentication.Google -Version 6.0.8
 
 ### program.cs
-`code` 
+```
 builder.Services.AddAuthentication()
     .AddIdentityServerJwt()
     .AddGoogle(options =>
@@ -10,3 +10,4 @@ builder.Services.AddAuthentication()
         options.ClientId = builder.Configuration["Authentication:Google:ClientId"];
         options.ClientSecret = builder.Configuration["Authentication:Google:ClientSecret"];
     });
+```
